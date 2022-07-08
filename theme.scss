@@ -89,6 +89,14 @@ button {
     }
 }
 
+.primary-color {
+    color: rgb(23, 123, 88);
+}
+
+.bold {
+    font-weight: 600;
+}
+
 .danger {
     background-color: rgb(231, 68, 68);
     &:hover {

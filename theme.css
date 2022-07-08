@@ -108,6 +108,14 @@ button {
   background-color: #279871;
 }
 
+.primary-color {
+  color: #177b58;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 .danger {
   background-color: #e74444;
 }

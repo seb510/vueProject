@@ -18,7 +18,7 @@
                 v-on: = @
             -->
             <div class="card">
-                <h1>{{title}}</h1>
+                <h1 :style="{color: inputValue.length < 5 ? 'darkred' : 'darkblue', fontSize: inputValue.length < 6 ? '1.4rem' : '1.4rem'}">{{title}}</h1>
                 <div class="form-control">
                     <div class="field-input">
                         <input type="text" v-model="inputValue" @keypress.enter="addNewNote" :placeholder="placeholderString">
@@ -27,7 +27,9 @@
                 </div>
                 <ul class="list" v-if="notes.length !== 0">
                     <li class="list-item" v-for="(note, idx) in notes">
-                        ({{idx +1}}) {{toUpperCase(note)}}
+                        <!--<span :class="note.length > 5 ? 'primary-color': 'bold'">({{idx +1}}) {{toUpperCase(note)}}</span>-->
+                        <!--<span :class="{'primary-color' : true, 'bold' : note.length > 5 }">({{idx +1}}) {{toUpperCase(note)}}</span>-->
+                        <span :class="['bold', {'primary-color' : note.length > 5 }]">({{idx +1}}) {{toUpperCase(note)}}</span>
                         <button class="btn danger" @click="removeNote(idx)">Удалить</button>
                     </li>
                     <li class="list-item list-count">
