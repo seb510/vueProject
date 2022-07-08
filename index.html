@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <div class="content" id="app">
+        <div class="content d-none" id="app1">
             <!--
                 v-bind: = :
                 v-on: = @
@@ -40,12 +40,24 @@
                     Список заметок пуст
                 </div>
             </div>
+
+
+        </div>
+        <div class="content" id="app">
+            <div class="card">
+                <div v-html="myHtml"></div>
+                <h2 v-text="title">title</h2>
+                <h2 v-once>{{title}}</h2>
+                <h2 v-pre>{{title}}</h2>
+
+                <button class="btn " @click="title = 'Теперь я другое название'"> Изменить</button>
+            </div>
         </div>
 
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="app.js"></script>
+    <script src="app2.js"></script>
 </body>
 
 </html>

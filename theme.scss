@@ -72,6 +72,10 @@ button {
     cursor: pointer;
 }
 
+.btn {
+    background-color: #000;
+}
+
 .form-control {
     padding: 10px 0 20px;
     border-bottom: 1px solid darkcyan;
@@ -133,4 +137,8 @@ button {
         margin-top: 10px;
         padding-top: 10px;
     }
+}
+
+.d-none {
+    display: none;
 }

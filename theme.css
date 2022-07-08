@@ -90,6 +90,10 @@ button {
   cursor: pointer;
 }
 
+.btn {
+  background-color: #000;
+}
+
 .form-control {
   padding: 10px 0 20px;
   border-bottom: 1px solid darkcyan;
@@ -160,5 +164,9 @@ button {
   border-top: 1px solid #41403e;
   margin-top: 10px;
   padding-top: 10px;
+}
+
+.d-none {
+  display: none;
 }
 /*# sourceMappingURL=theme.css.map */
