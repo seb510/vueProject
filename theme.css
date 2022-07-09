@@ -92,6 +92,7 @@ button {
 
 .btn {
   background-color: #000;
+  margin: 10px auto;
 }
 
 .form-control {
