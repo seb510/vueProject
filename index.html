@@ -18,7 +18,7 @@
                 v-on: = @
             -->
             <div class="card">
-                <h1 :style="{color: inputValue.length < 5 ? 'darkred' : 'darkblue', fontSize: inputValue.length < 6 ? '1.4rem' : '1.4rem'}">{{title}}</h1>
+                <h1 :style="{color: inputValue.length < 5 ? 'darkred' : 'darkblue', fontSize: inputValue.length < 6 ? '1.4rem' : '1.6rem'}">{{title}}</h1>
                 <div class="form-control">
                     <div class="field-input">
                         <input type="text" v-model="inputValue" @keypress.enter="addNewNote" :placeholder="placeholderString">

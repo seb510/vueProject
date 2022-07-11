@@ -1,10 +1,10 @@
 const App = {
     data() {
         return {
-            placeholderString: 'Введите название заметки',
-            title: 'Список заметок',
+            placeholderString: 'Введите название',
+            title: 'Список моих заметок',
             inputValue: '',
-            notes: ["Заметка 1", "Заметка 2"]
+            notes: ["Заметка 1", "Заметка 2", 'My notes 3']
         }
     },
     methods: {
