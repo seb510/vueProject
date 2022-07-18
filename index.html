@@ -17,7 +17,7 @@
 
 <body>
     <div class="container">
-        <div class="content d-none" id="app1">
+        <div class="content" id="app1">
             <!--
                 v-bind: = :
                 v-on: = @
@@ -48,7 +48,7 @@
 
 
         </div>
-        <div class="content" id="app" v-clock>
+        <div class="content d-none" id="app" v-clock>
             <div class="card">
                 <div v-html="myHtml"></div>
                 <h2 v-text="title">title</h2>
@@ -75,7 +75,7 @@
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
-    <script src="app2.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
